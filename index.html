@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matkalaskuri</title>
+    <link rel="stylesheet" href="styles.css">
     <script>
         const countPrice = () => {
             let people = document.getElementById("people").value;
@@ -33,17 +34,22 @@
     </script>
 </head>
 <body>
-    <h1>Matkalaskuri</h1>
-    <p>Tervetuloa matkalaskuriin</p>
-    <form>
-        <label for="people">Matkustajien määrä</label>
-        <input id="people" name="people" type="number" min="1" max="8">
-        <label for="distance">Matkan pituus</label>
-        <input id="distance" name="distance" type="number" min="1" max="2000">
-        <label for="startTime">Matkan aloitusaika</label>
-        <input id="startTime" name="startTime" type="number" min="0" max="24">
-        <input type="button" name="submit" onclick="countPrice()" value ="Katso hinta">
-    </form>
-    <p id="output"></p>
+    <header>
+        <h1>Matkalaskuri</h1>
+        <p>Tervetuloa matkalaskuriin</p>  
+    </header>
+    <main>  
+        <p>Laskurilla voit laskea alustavan taksimatkan hinnan perustuen matkustajien määrään, matkan pituuteen ja aloitusaikaan.</p>  
+        <form>
+            <label for="people">Matkustajien määrä</label>
+            <input id="people" name="people" type="number" min="1" max="8">
+            <label for="distance">Matkan pituus</label>
+            <input id="distance" name="distance" type="number" min="1" max="2000">
+            <label for="startTime">Matkan aloitusaika</label>
+            <input id="startTime" name="startTime" type="number" min="0" max="24">
+            <input id="show" type="button" name="submit" onclick="countPrice()" value ="Katso hinta">
+        </form>
+        <p id="output"></p>
+    </main>
 </body>
 </html>

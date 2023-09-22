@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+header {
+    margin-left: 5%;
+}
+
+main {
+    margin-left: 3%;
+    width: 500px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+}
+
+main p {
+    margin-bottom: 5px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+#show {
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+    background-color: azure;
+    border: 1px solid rgb(157, 157, 243);
+    border-radius: 8px;
+}
+
+#show:hover {
+    background-color: rgb(210, 245, 245);
+    cursor: pointer;
+}
