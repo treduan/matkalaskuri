@@ -20,7 +20,7 @@ main form {
 }
 
 main p {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -29,12 +29,12 @@ label {
 
 input {
     margin-bottom: 5px;
+    width: 100px;
 }
 
 #show {
     width: 100px;
     padding: 10px;
-    margin: auto;
     background-color: azure;
     border: 1px solid rgb(157, 157, 243);
     border-radius: 8px;
